@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "xBVbRzNF5CY=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\JOSE CARDENAS\\OneDrive\\Escritorio\\ITM\\APIS\\SportsLeague\\SportsLeague.Domain\\SportsLeague.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\JOSE CARDENAS\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.3\\microsoft.extensions.dependencyinjection.abstractions.10.0.3.nupkg.sha512",
+    "C:\\Users\\JOSE CARDENAS\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\10.0.3\\microsoft.extensions.logging.abstractions.10.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
