@@ -11,7 +11,7 @@ namespace SportsLeague.Domain.Interfaces.Repositories
         Task<T?> GetByIdasync(int id);
         Task<T> CreateAsync(T entity);
         Task DeleteAsync(int id);
-        Task UpdateAsync(int id);
+        Task UpdateAsync(T team);
         Task<bool> ExistAsync(int id);
     }
 }
