@@ -10,19 +10,16 @@ namespace SportsLeague.DataAccess.Repositories
 {
     public class GenericRepository<T> : IGenereicRepository<T> where T : AuditBase
     {
-        private readonly LeagueDbContext _context;
+        protected readonly LeagueDbContext _context;
         public GenericRepository(LeagueDbContext context)
         {
             _context = context;
         }
         public async Task<T> CreateAsync(T entity)
         {
-            if (entity != null)
-            {
-                entity.CreatedAt = DateTime.UtcNow;
-                await _context.AddAsync(entity);
-                await _context.SaveChangesAsync();
-            }
+            entity.CreatedAt = DateTime.UtcNow;
+            await _context.AddAsync(entity);
+            await _context.SaveChangesAsync();
             return entity;
         }
 
@@ -48,7 +45,7 @@ namespace SportsLeague.DataAccess.Repositories
 
         public async Task<T?> GetByIdasync(int id)
         {
-            return await _context.Set<T>().FirstOrDefaultAsync(e => e.Id == id);            
+            return await _context.Set<T>().FindAsync(id);            
         }
 
         public async Task UpdateAsync(T entity)
