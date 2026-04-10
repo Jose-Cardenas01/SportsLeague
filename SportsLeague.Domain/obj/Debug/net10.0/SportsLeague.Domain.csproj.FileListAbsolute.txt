@@ -1,0 +1,13 @@
+C:\Users\JOSE CARDENAS\OneDrive\Escritorio\ITM\APIS\SportsLeague\SportsLeague.Domain\bin\Debug\net10.0\SportsLeague.Domain.deps.json
+C:\Users\JOSE CARDENAS\OneDrive\Escritorio\ITM\APIS\SportsLeague\SportsLeague.Domain\bin\Debug\net10.0\SportsLeague.Domain.dll
+C:\Users\JOSE CARDENAS\OneDrive\Escritorio\ITM\APIS\SportsLeague\SportsLeague.Domain\bin\Debug\net10.0\SportsLeague.Domain.pdb
+C:\Users\JOSE CARDENAS\OneDrive\Escritorio\ITM\APIS\SportsLeague\SportsLeague.Domain\obj\Debug\net10.0\SportsLeague.Domain.csproj.AssemblyReference.cache
+C:\Users\JOSE CARDENAS\OneDrive\Escritorio\ITM\APIS\SportsLeague\SportsLeague.Domain\obj\Debug\net10.0\SportsLeague.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JOSE CARDENAS\OneDrive\Escritorio\ITM\APIS\SportsLeague\SportsLeague.Domain\obj\Debug\net10.0\SportsLeague.Domain.AssemblyInfoInputs.cache
+C:\Users\JOSE CARDENAS\OneDrive\Escritorio\ITM\APIS\SportsLeague\SportsLeague.Domain\obj\Debug\net10.0\SportsLeague.Domain.AssemblyInfo.cs
+C:\Users\JOSE CARDENAS\OneDrive\Escritorio\ITM\APIS\SportsLeague\SportsLeague.Domain\obj\Debug\net10.0\SportsLeague.Domain.csproj.CoreCompileInputs.cache
+C:\Users\JOSE CARDENAS\OneDrive\Escritorio\ITM\APIS\SportsLeague\SportsLeague.Domain\obj\Debug\net10.0\SportsLeague.Domain.sourcelink.json
+C:\Users\JOSE CARDENAS\OneDrive\Escritorio\ITM\APIS\SportsLeague\SportsLeague.Domain\obj\Debug\net10.0\SportsLeague.Domain.dll
+C:\Users\JOSE CARDENAS\OneDrive\Escritorio\ITM\APIS\SportsLeague\SportsLeague.Domain\obj\Debug\net10.0\refint\SportsLeague.Domain.dll
+C:\Users\JOSE CARDENAS\OneDrive\Escritorio\ITM\APIS\SportsLeague\SportsLeague.Domain\obj\Debug\net10.0\SportsLeague.Domain.pdb
+C:\Users\JOSE CARDENAS\OneDrive\Escritorio\ITM\APIS\SportsLeague\SportsLeague.Domain\obj\Debug\net10.0\ref\SportsLeague.Domain.dll

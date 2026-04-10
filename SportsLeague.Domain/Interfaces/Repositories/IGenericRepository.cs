@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SportsLeague.Domain.Interfaces.Repositories
 {
-    public interface IGenereicRepository<T> where T : AuditBase
+    public interface IGenericRepository<T> where T : AuditBase
     {
         Task<IEnumerable<T>> GetAllasync();
         Task<T?> GetByIdasync(int id);

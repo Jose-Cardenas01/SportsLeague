@@ -14,8 +14,8 @@ namespace Sportsleague.API.Controllers
     {
         private readonly ITeamServices   _teamService;
         private readonly IMapper _map;
-        private readonly ILogger _logger;
-        public TeamController(ITeamServices teamServices, IMapper map, ILogger logger)
+        private readonly ILogger<TeamController> _logger;
+        public TeamController(ITeamServices teamServices, IMapper map, ILogger<TeamController> logger)
         {
             _teamService = teamServices;
             _map = map;

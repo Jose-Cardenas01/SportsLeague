@@ -8,11 +8,11 @@ using System.Text;
 
 namespace SportsLeague.Domain.Services
 {
-    public class TeamService : ITeamServices
+    public class TeamServices : ITeamServices
     {
         private readonly ITeamRepository _teamRepository;
-        private readonly ILogger<TeamService> _logger;
-        public TeamService(ITeamRepository teamRepository, ILogger<TeamService> logger)
+        private readonly ILogger<TeamServices> _logger;
+        public TeamServices(ITeamRepository teamRepository, ILogger<TeamServices> logger)
         {
             _teamRepository = teamRepository;
             _logger = logger;

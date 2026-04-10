@@ -9,8 +9,13 @@ namespace Sportsleague.API.Mappings
     {
         public MappingProfile()
         {
+            //Team mappings
             CreateMap<TeamRequestDTO, Teams>().ReverseMap();
             CreateMap<Teams, TeamResponseDTO>().ReverseMap();
+
+            // Player mappings
+            CreateMap<PlayerRequestDTO, Player>();
+            CreateMap<Player, PlayerResponseDTO>().ForMember(dest => dest.TeamName, opt => opt.MapFrom(src => src.Team.Name));
         }
     }
 }

@@ -8,7 +8,7 @@ using System.Text;
 
 namespace SportsLeague.DataAccess.Repositories
 {
-    public class GenericRepository<T> : IGenereicRepository<T> where T : AuditBase
+    public class GenericRepository<T> : IGenericRepository<T> where T : AuditBase
     {
         protected readonly LeagueDbContext _context;
         public GenericRepository(LeagueDbContext context)
