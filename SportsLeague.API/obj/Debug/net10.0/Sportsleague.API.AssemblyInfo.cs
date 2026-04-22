@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Sportsleague.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1044bda86d6de3a352dfab363ff4c44ebac36e8f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c3b5c2506fb4507c273edba5380a8397c964fb65")]
 [assembly: System.Reflection.AssemblyProductAttribute("Sportsleague.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Sportsleague.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
