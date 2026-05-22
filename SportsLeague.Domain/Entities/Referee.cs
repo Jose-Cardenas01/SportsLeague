@@ -16,5 +16,8 @@ namespace SportsLeague.Domain.Entities
         [MaxLength(100)]
         [Required]
         public required string Nationality { get; set; } = string.Empty;
+
+        // Navigation Property - Colección de partidos arbitrados
+        public ICollection<Match> Matches { get; set; } = new List<Match>();
     }
 }

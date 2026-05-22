@@ -22,6 +22,59 @@ namespace SportsLeague.DataAccess.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("SportsLeague.Domain.Entities.Match", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("AwayTeamId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("HomeTeamId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("MatchDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Matchday")
+                        .HasColumnType("int");
+
+                    b.Property<int>("RefereeId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TournamentId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Venue")
+                        .IsRequired()
+                        .HasMaxLength(150)
+                        .HasColumnType("nvarchar(150)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AwayTeamId");
+
+                    b.HasIndex("HomeTeamId");
+
+                    b.HasIndex("RefereeId");
+
+                    b.HasIndex("TournamentId");
+
+                    b.ToTable("Matches");
+                });
+
             modelBuilder.Entity("SportsLeague.Domain.Entities.Player", b =>
                 {
                     b.Property<int>("Id")
@@ -292,6 +345,41 @@ namespace SportsLeague.DataAccess.Migrations
                     b.ToTable("TournamentTeams");
                 });
 
+            modelBuilder.Entity("SportsLeague.Domain.Entities.Match", b =>
+                {
+                    b.HasOne("SportsLeague.Domain.Entities.Teams", "AwayTeam")
+                        .WithMany("AwayMatches")
+                        .HasForeignKey("AwayTeamId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("SportsLeague.Domain.Entities.Teams", "HomeTeam")
+                        .WithMany("HomeMatches")
+                        .HasForeignKey("HomeTeamId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("SportsLeague.Domain.Entities.Referee", "Referee")
+                        .WithMany("Matches")
+                        .HasForeignKey("RefereeId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("SportsLeague.Domain.Entities.Tournament", "Tournament")
+                        .WithMany("Matches")
+                        .HasForeignKey("TournamentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("AwayTeam");
+
+                    b.Navigation("HomeTeam");
+
+                    b.Navigation("Referee");
+
+                    b.Navigation("Tournament");
+                });
+
             modelBuilder.Entity("SportsLeague.Domain.Entities.Player", b =>
                 {
                     b.HasOne("SportsLeague.Domain.Entities.Teams", "Team")
@@ -341,6 +429,11 @@ namespace SportsLeague.DataAccess.Migrations
                     b.Navigation("Tournament");
                 });
 
+            modelBuilder.Entity("SportsLeague.Domain.Entities.Referee", b =>
+                {
+                    b.Navigation("Matches");
+                });
+
             modelBuilder.Entity("SportsLeague.Domain.Entities.Sponsors", b =>
                 {
                     b.Navigation("TournamentSponsors");
@@ -348,6 +441,10 @@ namespace SportsLeague.DataAccess.Migrations
 
             modelBuilder.Entity("SportsLeague.Domain.Entities.Teams", b =>
                 {
+                    b.Navigation("AwayMatches");
+
+                    b.Navigation("HomeMatches");
+
                     b.Navigation("Players");
 
                     b.Navigation("TournamentTeams");
@@ -355,6 +452,8 @@ namespace SportsLeague.DataAccess.Migrations
 
             modelBuilder.Entity("SportsLeague.Domain.Entities.Tournament", b =>
                 {
+                    b.Navigation("Matches");
+
                     b.Navigation("TournamentSponsors");
 
                     b.Navigation("TournamentTeams");
