@@ -1,4 +1,5 @@
-﻿using SportsLeague.Domain.Enum;
+﻿using SportsLeague.Domain.Entities;
+using SportsLeague.Domain.Enum;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -17,9 +18,13 @@ namespace SportsLeague.Domain.Entities
         public required DateTime BirthDate { get; set; }
         public required int Number { get; set; }
         public required PlayerPosition Position { get; set; }
+
         // Foreign Key
         public int TeamId { get; set; }
+
         // Navigation Property
         public Teams Team { get; set; } = null!;
+        public ICollection<Goal> Goals { get; set; } = new List<Goal>();
+        public ICollection<Card> Cards { get; set; } = new List<Card>();
     }
 }
