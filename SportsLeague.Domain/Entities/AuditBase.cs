@@ -11,7 +11,7 @@ namespace SportsLeague.Domain.Entities
         [Key]
         public int Id { get; set; }
         [Required]
-        public required DateTime CreatedAt { get; set; } = DateTime.Now;
+        public  DateTime CreatedAt { get; set; } = DateTime.Now;
         public DateTime? UpdatedAt { get; set; }
     }
 }
