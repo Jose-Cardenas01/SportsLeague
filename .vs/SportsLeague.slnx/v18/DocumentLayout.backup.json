@@ -3,28 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\JOSE CARDENAS\\OneDrive\\Escritorio\\ITM\\APIS\\SportsLeague\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9D8AA9FB-BA74-B3FE-EF5E-76B56CCB898E}|SportsLeague.API\\Sportsleague.API.csproj|c:\\users\\jose cardenas\\onedrive\\escritorio\\itm\\apis\\sportsleague\\sportsleague.api\\controllers\\standingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D8AA9FB-BA74-B3FE-EF5E-76B56CCB898E}|SportsLeague.API\\Sportsleague.API.csproj|solutionrelative:sportsleague.api\\controllers\\standingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9D8AA9FB-BA74-B3FE-EF5E-76B56CCB898E}|SportsLeague.API\\Sportsleague.API.csproj|c:\\users\\jose cardenas\\onedrive\\escritorio\\itm\\apis\\sportsleague\\sportsleague.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D8AA9FB-BA74-B3FE-EF5E-76B56CCB898E}|SportsLeague.API\\Sportsleague.API.csproj|solutionrelative:sportsleague.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D92724A7-7175-242C-6418-4327855578F7}|SportsLeague.Domain\\SportsLeague.Domain.csproj|c:\\users\\jose cardenas\\onedrive\\escritorio\\itm\\apis\\sportsleague\\sportsleague.domain\\services\\standingsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D92724A7-7175-242C-6418-4327855578F7}|SportsLeague.Domain\\SportsLeague.Domain.csproj|solutionrelative:sportsleague.domain\\services\\standingsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9D8AA9FB-BA74-B3FE-EF5E-76B56CCB898E}|SportsLeague.API\\Sportsleague.API.csproj|c:\\users\\jose cardenas\\onedrive\\escritorio\\itm\\apis\\sportsleague\\sportsleague.api\\controllers\\matchlineupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D8AA9FB-BA74-B3FE-EF5E-76B56CCB898E}|SportsLeague.API\\Sportsleague.API.csproj|solutionrelative:sportsleague.api\\controllers\\matchlineupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D92724A7-7175-242C-6418-4327855578F7}|SportsLeague.Domain\\SportsLeague.Domain.csproj|c:\\users\\jose cardenas\\onedrive\\escritorio\\itm\\apis\\sportsleague\\sportsleague.domain\\interfaces\\services\\istandingsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D92724A7-7175-242C-6418-4327855578F7}|SportsLeague.Domain\\SportsLeague.Domain.csproj|solutionrelative:sportsleague.domain\\interfaces\\services\\istandingsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B02B639B-6E3C-68BE-32BC-28F74206CB31}|SportsLeague.DataAccess\\SportsLeague.DataAccess.csproj|c:\\users\\jose cardenas\\onedrive\\escritorio\\itm\\apis\\sportsleague\\sportsleague.dataaccess\\repositories\\matchlineuprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B02B639B-6E3C-68BE-32BC-28F74206CB31}|SportsLeague.DataAccess\\SportsLeague.DataAccess.csproj|solutionrelative:sportsleague.dataaccess\\repositories\\matchlineuprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D8AA9FB-BA74-B3FE-EF5E-76B56CCB898E}|SportsLeague.API\\Sportsleague.API.csproj|c:\\users\\jose cardenas\\onedrive\\escritorio\\itm\\apis\\sportsleague\\sportsleague.api\\dtos\\response\\cardstatsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D8AA9FB-BA74-B3FE-EF5E-76B56CCB898E}|SportsLeague.API\\Sportsleague.API.csproj|solutionrelative:sportsleague.api\\dtos\\response\\cardstatsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D92724A7-7175-242C-6418-4327855578F7}|SportsLeague.Domain\\SportsLeague.Domain.csproj|c:\\users\\jose cardenas\\onedrive\\escritorio\\itm\\apis\\sportsleague\\sportsleague.domain\\services\\matchlineupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D92724A7-7175-242C-6418-4327855578F7}|SportsLeague.Domain\\SportsLeague.Domain.csproj|solutionrelative:sportsleague.domain\\services\\matchlineupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D8AA9FB-BA74-B3FE-EF5E-76B56CCB898E}|SportsLeague.API\\Sportsleague.API.csproj|c:\\users\\jose cardenas\\onedrive\\escritorio\\itm\\apis\\sportsleague\\sportsleague.api\\dtos\\response\\topscorerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D8AA9FB-BA74-B3FE-EF5E-76B56CCB898E}|SportsLeague.API\\Sportsleague.API.csproj|solutionrelative:sportsleague.api\\dtos\\response\\topscorerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D92724A7-7175-242C-6418-4327855578F7}|SportsLeague.Domain\\SportsLeague.Domain.csproj|c:\\users\\jose cardenas\\onedrive\\escritorio\\itm\\apis\\sportsleague\\sportsleague.domain\\interfaces\\services\\imatchlineupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D92724A7-7175-242C-6418-4327855578F7}|SportsLeague.Domain\\SportsLeague.Domain.csproj|solutionrelative:sportsleague.domain\\interfaces\\services\\imatchlineupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D8AA9FB-BA74-B3FE-EF5E-76B56CCB898E}|SportsLeague.API\\Sportsleague.API.csproj|c:\\users\\jose cardenas\\onedrive\\escritorio\\itm\\apis\\sportsleague\\sportsleague.api\\dtos\\response\\standingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D8AA9FB-BA74-B3FE-EF5E-76B56CCB898E}|SportsLeague.API\\Sportsleague.API.csproj|solutionrelative:sportsleague.api\\dtos\\response\\standingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D92724A7-7175-242C-6418-4327855578F7}|SportsLeague.Domain\\SportsLeague.Domain.csproj|c:\\users\\jose cardenas\\onedrive\\escritorio\\itm\\apis\\sportsleague\\sportsleague.domain\\interfaces\\repositories\\imatchlineuprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D92724A7-7175-242C-6418-4327855578F7}|SportsLeague.Domain\\SportsLeague.Domain.csproj|solutionrelative:sportsleague.domain\\interfaces\\repositories\\imatchlineuprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B02B639B-6E3C-68BE-32BC-28F74206CB31}|SportsLeague.DataAccess\\SportsLeague.DataAccess.csproj|c:\\users\\jose cardenas\\onedrive\\escritorio\\itm\\apis\\sportsleague\\sportsleague.dataaccess\\context\\leaguedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B02B639B-6E3C-68BE-32BC-28F74206CB31}|SportsLeague.DataAccess\\SportsLeague.DataAccess.csproj|solutionrelative:sportsleague.dataaccess\\context\\leaguedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D92724A7-7175-242C-6418-4327855578F7}|SportsLeague.Domain\\SportsLeague.Domain.csproj|c:\\users\\jose cardenas\\onedrive\\escritorio\\itm\\apis\\sportsleague\\sportsleague.domain\\entities\\matchlineup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D92724A7-7175-242C-6418-4327855578F7}|SportsLeague.Domain\\SportsLeague.Domain.csproj|solutionrelative:sportsleague.domain\\entities\\matchlineup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D8AA9FB-BA74-B3FE-EF5E-76B56CCB898E}|SportsLeague.API\\Sportsleague.API.csproj|c:\\users\\jose cardenas\\onedrive\\escritorio\\itm\\apis\\sportsleague\\sportsleague.api\\mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D8AA9FB-BA74-B3FE-EF5E-76B56CCB898E}|SportsLeague.API\\Sportsleague.API.csproj|solutionrelative:sportsleague.api\\mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D8AA9FB-BA74-B3FE-EF5E-76B56CCB898E}|SportsLeague.API\\Sportsleague.API.csproj|c:\\users\\jose cardenas\\onedrive\\escritorio\\itm\\apis\\sportsleague\\sportsleague.api\\dtos\\request\\matchlineuprequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D8AA9FB-BA74-B3FE-EF5E-76B56CCB898E}|SportsLeague.API\\Sportsleague.API.csproj|solutionrelative:sportsleague.api\\dtos\\request\\matchlineuprequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D8AA9FB-BA74-B3FE-EF5E-76B56CCB898E}|SportsLeague.API\\Sportsleague.API.csproj|c:\\users\\jose cardenas\\onedrive\\escritorio\\itm\\apis\\sportsleague\\sportsleague.api\\dtos\\response\\matchlineupresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D8AA9FB-BA74-B3FE-EF5E-76B56CCB898E}|SportsLeague.API\\Sportsleague.API.csproj|solutionrelative:sportsleague.api\\dtos\\response\\matchlineupresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,86 +54,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "StandingsController.cs",
-              "DocumentMoniker": "C:\\Users\\JOSE CARDENAS\\OneDrive\\Escritorio\\ITM\\APIS\\SportsLeague\\SportsLeague.API\\Controllers\\StandingsController.cs",
-              "RelativeDocumentMoniker": "SportsLeague.API\\Controllers\\StandingsController.cs",
-              "ToolTip": "C:\\Users\\JOSE CARDENAS\\OneDrive\\Escritorio\\ITM\\APIS\\SportsLeague\\SportsLeague.API\\Controllers\\StandingsController.cs",
-              "RelativeToolTip": "SportsLeague.API\\Controllers\\StandingsController.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAADwvzoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-22T01:20:06.158Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "StandingsService.cs",
-              "DocumentMoniker": "C:\\Users\\JOSE CARDENAS\\OneDrive\\Escritorio\\ITM\\APIS\\SportsLeague\\SportsLeague.Domain\\Services\\StandingsService.cs",
-              "RelativeDocumentMoniker": "SportsLeague.Domain\\Services\\StandingsService.cs",
-              "ToolTip": "C:\\Users\\JOSE CARDENAS\\OneDrive\\Escritorio\\ITM\\APIS\\SportsLeague\\SportsLeague.Domain\\Services\\StandingsService.cs",
-              "RelativeToolTip": "SportsLeague.Domain\\Services\\StandingsService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-22T01:11:57.122Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IStandingsService.cs",
-              "DocumentMoniker": "C:\\Users\\JOSE CARDENAS\\OneDrive\\Escritorio\\ITM\\APIS\\SportsLeague\\SportsLeague.Domain\\Interfaces\\Services\\IStandingsService.cs",
-              "RelativeDocumentMoniker": "SportsLeague.Domain\\Interfaces\\Services\\IStandingsService.cs",
-              "ToolTip": "C:\\Users\\JOSE CARDENAS\\OneDrive\\Escritorio\\ITM\\APIS\\SportsLeague\\SportsLeague.Domain\\Interfaces\\Services\\IStandingsService.cs",
-              "RelativeToolTip": "SportsLeague.Domain\\Interfaces\\Services\\IStandingsService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-22T01:02:51.978Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CardStatsDTO.cs",
-              "DocumentMoniker": "C:\\Users\\JOSE CARDENAS\\OneDrive\\Escritorio\\ITM\\APIS\\SportsLeague\\SportsLeague.API\\DTOs\\Response\\CardStatsDTO.cs",
-              "RelativeDocumentMoniker": "SportsLeague.API\\DTOs\\Response\\CardStatsDTO.cs",
-              "ToolTip": "C:\\Users\\JOSE CARDENAS\\OneDrive\\Escritorio\\ITM\\APIS\\SportsLeague\\SportsLeague.API\\DTOs\\Response\\CardStatsDTO.cs",
-              "RelativeToolTip": "SportsLeague.API\\DTOs\\Response\\CardStatsDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-22T01:01:41.378Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TopScorerDTO.cs",
-              "DocumentMoniker": "C:\\Users\\JOSE CARDENAS\\OneDrive\\Escritorio\\ITM\\APIS\\SportsLeague\\SportsLeague.API\\DTOs\\Response\\TopScorerDTO.cs",
-              "RelativeDocumentMoniker": "SportsLeague.API\\DTOs\\Response\\TopScorerDTO.cs",
-              "ToolTip": "C:\\Users\\JOSE CARDENAS\\OneDrive\\Escritorio\\ITM\\APIS\\SportsLeague\\SportsLeague.API\\DTOs\\Response\\TopScorerDTO.cs",
-              "RelativeToolTip": "SportsLeague.API\\DTOs\\Response\\TopScorerDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-22T01:01:22.235Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "StandingDTO.cs",
-              "DocumentMoniker": "C:\\Users\\JOSE CARDENAS\\OneDrive\\Escritorio\\ITM\\APIS\\SportsLeague\\SportsLeague.API\\DTOs\\Response\\StandingDTO.cs",
-              "RelativeDocumentMoniker": "SportsLeague.API\\DTOs\\Response\\StandingDTO.cs",
-              "ToolTip": "C:\\Users\\JOSE CARDENAS\\OneDrive\\Escritorio\\ITM\\APIS\\SportsLeague\\SportsLeague.API\\DTOs\\Response\\StandingDTO.cs",
-              "RelativeToolTip": "SportsLeague.API\\DTOs\\Response\\StandingDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-22T01:00:58.671Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -129,6 +71,149 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MatchLineupRepository.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE CARDENAS\\OneDrive\\Escritorio\\ITM\\APIS\\SportsLeague\\SportsLeague.DataAccess\\Repositories\\MatchLineupRepository.cs",
+              "RelativeDocumentMoniker": "SportsLeague.DataAccess\\Repositories\\MatchLineupRepository.cs",
+              "ToolTip": "C:\\Users\\JOSE CARDENAS\\OneDrive\\Escritorio\\ITM\\APIS\\SportsLeague\\SportsLeague.DataAccess\\Repositories\\MatchLineupRepository.cs",
+              "RelativeToolTip": "SportsLeague.DataAccess\\Repositories\\MatchLineupRepository.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAwwDcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-22T01:51:23.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MatchLineupService.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE CARDENAS\\OneDrive\\Escritorio\\ITM\\APIS\\SportsLeague\\SportsLeague.Domain\\Services\\MatchLineupService.cs",
+              "RelativeDocumentMoniker": "SportsLeague.Domain\\Services\\MatchLineupService.cs",
+              "ToolTip": "C:\\Users\\JOSE CARDENAS\\OneDrive\\Escritorio\\ITM\\APIS\\SportsLeague\\SportsLeague.Domain\\Services\\MatchLineupService.cs",
+              "RelativeToolTip": "SportsLeague.Domain\\Services\\MatchLineupService.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAADwv1gAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-22T01:50:45.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IMatchLineupService.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE CARDENAS\\OneDrive\\Escritorio\\ITM\\APIS\\SportsLeague\\SportsLeague.Domain\\Interfaces\\Services\\IMatchLineupService.cs",
+              "RelativeDocumentMoniker": "SportsLeague.Domain\\Interfaces\\Services\\IMatchLineupService.cs",
+              "ToolTip": "C:\\Users\\JOSE CARDENAS\\OneDrive\\Escritorio\\ITM\\APIS\\SportsLeague\\SportsLeague.Domain\\Interfaces\\Services\\IMatchLineupService.cs",
+              "RelativeToolTip": "SportsLeague.Domain\\Interfaces\\Services\\IMatchLineupService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-22T01:50:19.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE CARDENAS\\OneDrive\\Escritorio\\ITM\\APIS\\SportsLeague\\SportsLeague.API\\Program.cs",
+              "RelativeDocumentMoniker": "SportsLeague.API\\Program.cs",
+              "ToolTip": "C:\\Users\\JOSE CARDENAS\\OneDrive\\Escritorio\\ITM\\APIS\\SportsLeague\\SportsLeague.API\\Program.cs",
+              "RelativeToolTip": "SportsLeague.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-22T01:47:13.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MatchLineupController.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE CARDENAS\\OneDrive\\Escritorio\\ITM\\APIS\\SportsLeague\\SportsLeague.API\\Controllers\\MatchLineupController.cs",
+              "RelativeDocumentMoniker": "SportsLeague.API\\Controllers\\MatchLineupController.cs",
+              "ToolTip": "C:\\Users\\JOSE CARDENAS\\OneDrive\\Escritorio\\ITM\\APIS\\SportsLeague\\SportsLeague.API\\Controllers\\MatchLineupController.cs",
+              "RelativeToolTip": "SportsLeague.API\\Controllers\\MatchLineupController.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAgwDYAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-22T01:52:17.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IMatchLineupRepository.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE CARDENAS\\OneDrive\\Escritorio\\ITM\\APIS\\SportsLeague\\SportsLeague.Domain\\Interfaces\\Repositories\\IMatchLineupRepository.cs",
+              "RelativeDocumentMoniker": "SportsLeague.Domain\\Interfaces\\Repositories\\IMatchLineupRepository.cs",
+              "ToolTip": "C:\\Users\\JOSE CARDENAS\\OneDrive\\Escritorio\\ITM\\APIS\\SportsLeague\\SportsLeague.Domain\\Interfaces\\Repositories\\IMatchLineupRepository.cs",
+              "RelativeToolTip": "SportsLeague.Domain\\Interfaces\\Repositories\\IMatchLineupRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-22T01:49:33.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LeagueDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE CARDENAS\\OneDrive\\Escritorio\\ITM\\APIS\\SportsLeague\\SportsLeague.DataAccess\\Context\\LeagueDbContext.cs",
+              "RelativeDocumentMoniker": "SportsLeague.DataAccess\\Context\\LeagueDbContext.cs",
+              "ToolTip": "C:\\Users\\JOSE CARDENAS\\OneDrive\\Escritorio\\ITM\\APIS\\SportsLeague\\SportsLeague.DataAccess\\Context\\LeagueDbContext.cs",
+              "RelativeToolTip": "SportsLeague.DataAccess\\Context\\LeagueDbContext.cs",
+              "ViewState": "AgIAABcBAAAAAAAAAADwvzABAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-22T01:47:52.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MatchLineup.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE CARDENAS\\OneDrive\\Escritorio\\ITM\\APIS\\SportsLeague\\SportsLeague.Domain\\Entities\\MatchLineup.cs",
+              "RelativeDocumentMoniker": "SportsLeague.Domain\\Entities\\MatchLineup.cs",
+              "ToolTip": "C:\\Users\\JOSE CARDENAS\\OneDrive\\Escritorio\\ITM\\APIS\\SportsLeague\\SportsLeague.Domain\\Entities\\MatchLineup.cs",
+              "RelativeToolTip": "SportsLeague.Domain\\Entities\\MatchLineup.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-22T01:45:10.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE CARDENAS\\OneDrive\\Escritorio\\ITM\\APIS\\SportsLeague\\SportsLeague.API\\Mappings\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "SportsLeague.API\\Mappings\\MappingProfile.cs",
+              "ToolTip": "C:\\Users\\JOSE CARDENAS\\OneDrive\\Escritorio\\ITM\\APIS\\SportsLeague\\SportsLeague.API\\Mappings\\MappingProfile.cs",
+              "RelativeToolTip": "SportsLeague.API\\Mappings\\MappingProfile.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAQwFcAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-22T01:43:17.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MatchLineupResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE CARDENAS\\OneDrive\\Escritorio\\ITM\\APIS\\SportsLeague\\SportsLeague.API\\DTOs\\Response\\MatchLineupResponseDto.cs",
+              "RelativeDocumentMoniker": "SportsLeague.API\\DTOs\\Response\\MatchLineupResponseDto.cs",
+              "ToolTip": "C:\\Users\\JOSE CARDENAS\\OneDrive\\Escritorio\\ITM\\APIS\\SportsLeague\\SportsLeague.API\\DTOs\\Response\\MatchLineupResponseDto.cs",
+              "RelativeToolTip": "SportsLeague.API\\DTOs\\Response\\MatchLineupResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-22T01:42:04.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MatchLineupRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\JOSE CARDENAS\\OneDrive\\Escritorio\\ITM\\APIS\\SportsLeague\\SportsLeague.API\\DTOs\\Request\\MatchLineupRequestDto.cs",
+              "RelativeDocumentMoniker": "SportsLeague.API\\DTOs\\Request\\MatchLineupRequestDto.cs",
+              "ToolTip": "C:\\Users\\JOSE CARDENAS\\OneDrive\\Escritorio\\ITM\\APIS\\SportsLeague\\SportsLeague.API\\DTOs\\Request\\MatchLineupRequestDto.cs",
+              "RelativeToolTip": "SportsLeague.API\\DTOs\\Request\\MatchLineupRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-22T01:41:02.181Z",
+              "EditorCaption": ""
             }
           ]
         }
