@@ -37,9 +37,7 @@ public class MatchValidationHelper
         return match;
     }
 
-    public async Task<Player> ValidatePlayerInMatchAsync(
-        int playerId,
-        Match match)
+    public async Task<Player> ValidatePlayerInMatchAsync(int playerId, Match match)
     {
         var player = await _playerRepository.GetByIdasync(playerId);
 

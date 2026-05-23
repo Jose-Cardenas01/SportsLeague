@@ -410,28 +410,198 @@ public static class DataSeeder
 
         // ═══ 4. TORNEO ═══
 
-        var tournament = new Tournament
+        var tournament = new List<Tournament>
         {
-            Name = "Liga BetPlay 2026-I",
-            Season = "2026-I",
-            StartDate = new DateTime(2026, 1, 16),
-            EndDate = new DateTime(2026, 6, 5),
-            Status = TournamentStatus.InProgress
+            new()
+            {
+                Name = "Liga BetPlay 2026-I",
+                Season = "2026-I",
+                StartDate = new DateTime(2026, 1, 16),
+                EndDate = new DateTime(2026, 6, 5),
+                Status = TournamentStatus.InProgress
+            },
+            new()
+            {
+                Name = "Copa Colombia 2026",
+                Season = "2026",
+                StartDate= new DateTime(2026, 7, 1),
+                EndDate = new DateTime(2026, 12, 31),
+                Status = TournamentStatus.Pending
+            },
+            new()
+            {
+                Name = "Copa Betplay 2026",
+                Season = "2026",
+                StartDate= new DateTime(2026, 1, 10),
+                EndDate = new DateTime(2026, 5, 23),
+                Status = TournamentStatus.Finished
+            },
         };
 
-        context.Tournaments.Add(tournament);
+        context.Tournaments.AddRange(tournament);
 
         await context.SaveChangesAsync();
 
         // ═══ 5. INSCRIBIR LOS 20 EQUIPOS ═══
 
-        foreach (var team in teams)
+        for (int i = 0; i < tournament.Count; i++)
         {
-            context.TournamentTeams.Add(new TournamentTeam
+            foreach (var team in teams)
             {
-                TournamentId = tournament.Id,
-                TeamId = team.Id
+                context.TournamentTeams.Add(new TournamentTeam
+                {
+                    TournamentId = tournament[i].Id,
+                    TeamId = team.Id
+                });
+            }
+        }
+
+        await context.SaveChangesAsync();
+
+        // ═══ 6. GENERAR CALENDARIO (Round-Robin) ═══
+
+        foreach (var t in tournament)
+        {
+            var matchDate = t.StartDate; // 16 de enero 2026
+            var teamList = teams.ToList();
+            int totalTeams = teamList.Count;
+
+            // Round-Robin: fijar el primer equipo y rotar los demás
+            var rotating = teamList.Skip(1).ToList(); // 19 equipos rotan
+
+            for (int round = 0; round < totalTeams - 1; round++)
+            {
+                int matchDay = round + 1; // Fechas del 1 al 19
+
+                for (int match = 0; match < totalTeams / 2; match++)
+                {
+                    // Emparejar desde los extremos
+                    Teams home, away;
+                    if (match == 0)
+                    {
+                        home = teamList[0];
+                        away = rotating[0];
+                    }
+                    else
+                    {
+                        home = rotating[match];
+                        away = rotating[rotating.Count - match];
+                    }
+
+                    // Alternar localía en fechas pares
+                    if (round % 2 == 1)
+                        (home, away) = (away, home);
+
+                    context.Matches.Add(new Match
+                    {
+                        TournamentId = t.Id,
+                        HomeTeamId = home.Id,
+                        AwayTeamId = away.Id,
+                        RefereeId = referees[match % referees.Count].Id,
+                        Matchday = matchDay, // Fecha 1 a 19
+                        MatchDate = matchDate.AddHours(match < 5 ? 16 : 19),
+                        Venue = home.Stadium,
+                        Status = MatchStatus.Scheduled
+                    });
+                }
+
+                // Rotar: mover el primero al final
+                var first = rotating[0];
+                rotating.RemoveAt(0);
+                rotating.Add(first);
+
+                // Siguiente fecha: 7 días después
+                matchDate = matchDate.AddDays(7);
+            }
+        }
+
+        await context.SaveChangesAsync();
+
+        // ═══ 7. RESULTADOS, GOLES Y TARJETAS ═══
+        var random = new Random(42); // Seed fijo = resultados reproducibles
+        var allMatches = await context.Matches.ToListAsync();
+        var allPlayers = await context.Players.ToListAsync();
+
+        foreach (var m in allMatches)
+        {
+            // Cambiar estado a Finished
+            m.Status = MatchStatus.Finished;
+
+            // Generar marcador aleatorio (0-3 goles por equipo)
+            int homeGoals = random.Next(0, 4);
+            int awayGoals = random.Next(0, 4);
+
+            // Registrar resultado
+            context.MatchResults.Add(new MatchResult
+            {
+                MatchId = m.Id,
+                HomeGoals = homeGoals,
+                AwayGoals = awayGoals
             });
+
+            // Jugadores de cada equipo (excluir arqueros para goles)
+            var homeScorers = allPlayers
+                .Where(p => p.TeamId == m.HomeTeamId && p.Position != PlayerPosition.Goalkeeper)
+                .ToList();
+            var awayScorers = allPlayers
+                .Where(p => p.TeamId == m.AwayTeamId && p.Position != PlayerPosition.Goalkeeper)
+                .ToList();
+
+            // Registrar goles del local
+            for (int g = 0; g < homeGoals; g++)
+            {
+                var scorer = homeScorers[random.Next(homeScorers.Count)];
+                context.Goals.Add(new Goal
+                {
+                    MatchId = m.Id,
+                    PlayerId = scorer.Id,
+                    Minute = random.Next(1, 91),
+                    Type = GoalType.Normal
+                });
+            }
+
+            // Registrar goles del visitante
+            for (int g = 0; g < awayGoals; g++)
+            {
+                var scorer = awayScorers[random.Next(awayScorers.Count)];
+                context.Goals.Add(new Goal
+                {
+                    MatchId = m.Id,
+                    PlayerId = scorer.Id,
+                    Minute = random.Next(1, 91),
+                    Type = GoalType.Normal
+                });
+            }
+
+            // Tarjeta amarilla: ~25% de los partidos
+            if (random.Next(100) < 25)
+            {
+                var allMatchPlayers = allPlayers
+                    .Where(p => p.TeamId == m.HomeTeamId || p.TeamId == m.AwayTeamId)
+                    .ToList();
+                context.Cards.Add(new Card
+                {
+                    MatchId = m.Id,
+                    PlayerId = allMatchPlayers[random.Next(allMatchPlayers.Count)].Id,
+                    Type = CardType.Yellow,
+                    Minute = random.Next(15, 85)
+                });
+            }
+
+            // Tarjeta roja: ~5% de los partidos
+            if (random.Next(100) < 5)
+            {
+                var allMatchPlayers = allPlayers
+                    .Where(p => p.TeamId == m.HomeTeamId || p.TeamId == m.AwayTeamId)
+                    .ToList();
+                context.Cards.Add(new Card
+                {
+                    MatchId = m.Id,
+                    PlayerId = allMatchPlayers[random.Next(allMatchPlayers.Count)].Id,
+                    Type = CardType.Red,
+                    Minute = random.Next(30, 90)
+                });
+            }
         }
 
         await context.SaveChangesAsync();

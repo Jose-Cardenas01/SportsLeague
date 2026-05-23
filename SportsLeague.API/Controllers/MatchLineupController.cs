@@ -21,7 +21,7 @@ public class MatchLineupController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<ActionResult<MatchLineupResponseDto>> AddPlayer(int matchId, MatchLineupRequestDto dto)
+    public async Task<ActionResult<MatchLineupResponseDto>> Create(int matchId, MatchLineupRequestDto dto)
     {
         try
         {
@@ -36,7 +36,7 @@ public class MatchLineupController : ControllerBase
     }
 
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<MatchLineupResponseDto>>> GetByMatch(int matchId)
+    public async Task<ActionResult<IEnumerable<MatchLineupResponseDto>>> GetMatch(int matchId)
     {
         try
         {

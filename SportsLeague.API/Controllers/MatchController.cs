@@ -123,9 +123,7 @@ public class MatchController : ControllerBase
     }
 
     [HttpPatch("{id}/status")]
-    public async Task<ActionResult> UpdateStatus(
-        int id,
-        UpdateMatchStatusDTO dto)
+    public async Task<ActionResult> UpdateStatus(int id, UpdateMatchStatusDTO dto)
     {
         try
         {

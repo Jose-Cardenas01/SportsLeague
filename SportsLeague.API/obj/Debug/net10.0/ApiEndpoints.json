@@ -283,7 +283,7 @@
   },
   {
     "ContainingType": "SportsLeague.API.Controllers.MatchLineupController",
-    "Method": "AddPlayer",
+    "Method": "Create",
     "RelativePath": "api/match/{matchId}/lineup",
     "HttpMethod": "POST",
     "IsController": true,
@@ -314,7 +314,7 @@
   },
   {
     "ContainingType": "SportsLeague.API.Controllers.MatchLineupController",
-    "Method": "GetByMatch",
+    "Method": "GetMatch",
     "RelativePath": "api/match/{matchId}/lineup",
     "HttpMethod": "GET",
     "IsController": true,
