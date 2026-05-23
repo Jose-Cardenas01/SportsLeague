@@ -67,10 +67,16 @@ public class MatchLineupService : IMatchLineupService
         var match = await _matchRepository.GetByIdasync(matchId)
             ?? throw new KeyNotFoundException($"No se encontró el partido con ID {matchId}");
 
-        if (teamId != match.HomeTeamId && teamId != match.AwayTeamId)
+        if (teamId == match.HomeTeamId || teamId == match.AwayTeamId)
+        {
+            return await _matchLineupRepository.GetByMatchAndTeamWithDetailsAsync(matchId, teamId);
+        }
+        else
+        {
             throw new InvalidOperationException("El equipo no pertenece al partido indicado");
+        }
 
-        return await _matchLineupRepository.GetByMatchAndTeamWithDetailsAsync(matchId, teamId);
+        
     }
 
     public async Task DeleteLineupPlayerAsync(int matchId, int lineupId)

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SportsLeague.DataAccess")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5e520df6f1e341cc91e2ea3636089258f00d12e7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5985a0fc826cedb86e36aac284ae73e6231eb7c0")]
 [assembly: System.Reflection.AssemblyProductAttribute("SportsLeague.DataAccess")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SportsLeague.DataAccess")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

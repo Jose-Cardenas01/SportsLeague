@@ -614,8 +614,8 @@ public static class DataSeeder
             var awayPlayers = allPlayers.Where(p => p.TeamId == m.AwayTeamId).ToList();
     
             // 11 titulares + 5 suplentes
-            var homeLineup = homePlayers.OrderBy(_ => random.Next()).Take(16).ToList();
-            var awayLineup = awayPlayers.OrderBy(_ => random.Next()).Take(16).ToList();
+            var homeLineup = homePlayers.OrderBy(_ => random.Next()).Take(3).ToList();
+            var awayLineup = awayPlayers.OrderBy(_ => random.Next()).Take(3).ToList();
     
             foreach (var player in homeLineup)
             {
@@ -641,5 +641,7 @@ public static class DataSeeder
                 });
             }
         }
+
+        await context.SaveChangesAsync();
     }
 }

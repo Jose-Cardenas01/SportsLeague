@@ -38,9 +38,9 @@ public class MatchLineupRepository : GenericRepository<MatchLineup>, IMatchLineu
     public async Task<IEnumerable<MatchLineup>> GetByMatchAndTeamWithDetailsAsync(int matchId, int teamId)
     {
         return await _context.Set<MatchLineup>()
-            .Where(ml => ml.MatchId == matchId && ml.Player.TeamId == teamId)
             .Include(ml => ml.Player)
             .ThenInclude(p => p.Team)
+            .Where(ml => ml.MatchId == matchId && ml.Player.TeamId == teamId)
             .OrderByDescending(ml => ml.IsStarter)
             .ThenBy(ml => ml.Player.Number)
             .ToListAsync();
