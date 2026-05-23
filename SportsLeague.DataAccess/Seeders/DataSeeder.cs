@@ -520,7 +520,7 @@ public static class DataSeeder
         // ═══ 7. RESULTADOS, GOLES Y TARJETAS ═══
         var random = new Random(42); // Seed fijo = resultados reproducibles
         var allMatches = await context.Matches.ToListAsync();
-        var allPlayers = await context.Players.ToListAsync();
+        var allPlayers = await context.Players.Include(p => p.Team).ToListAsync();
 
         foreach (var m in allMatches)
         {
@@ -605,5 +605,41 @@ public static class DataSeeder
         }
 
         await context.SaveChangesAsync();
+
+        // ═══ 8. ALINEACIONES DE PARTIDOS ═══
+
+        foreach (var m in allMatches)
+        {
+            var homePlayers = allPlayers.Where(p => p.TeamId == m.HomeTeamId).ToList();
+            var awayPlayers = allPlayers.Where(p => p.TeamId == m.AwayTeamId).ToList();
+    
+            // 11 titulares + 5 suplentes
+            var homeLineup = homePlayers.OrderBy(_ => random.Next()).Take(16).ToList();
+            var awayLineup = awayPlayers.OrderBy(_ => random.Next()).Take(16).ToList();
+    
+            foreach (var player in homeLineup)
+            {
+                context.Set<MatchLineup>().Add(new MatchLineup
+                {
+                    IsStarter = true,
+                    Position = player.Position.ToString(),
+                    MatchId = m.Id,
+                    PlayerId = player.Id,
+                    CreatedAt = m.MatchDate
+                });
+            }
+    
+            foreach (var player in awayLineup)
+            {
+                context.Set<MatchLineup>().Add(new MatchLineup
+                {
+                    IsStarter = true,
+                    Position = player.Position.ToString(),
+                    MatchId = m.Id,
+                    PlayerId = player.Id,
+                    CreatedAt = m.MatchDate
+                });
+            }
+        }
     }
 }
